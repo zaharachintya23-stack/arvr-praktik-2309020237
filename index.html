@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktikum 1 - Scene Pertama</title>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Teks nama dan NIM -->
+    <a-text value="Chintya Zahara - 2309020237" position="0 3.8 -5" align="center" color="#222222" width="8"></a-text>
+
+    <!-- Objek beranimasi di tengah (menempel di lantai, berputar terus-menerus) -->
+    <a-torus position="0 0.9 -4" radius="0.8" radius-tubular="0.1" color="#9B5DE5"
+             animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear"></a-torus>
+
+    <!-- Objek primitif lain, disusun melingkar di kiri dan kanan -->
+    <a-box position="-3.3 0.6 -3.7" rotation="0 30 0" width="1.2" height="1.2" depth="1.2" color="#E76F51"></a-box>
+    <a-cone position="-1.8 0.8 -4.3" radius-bottom="0.6" radius-top="0" height="1.6" color="#E9C46A"></a-cone>
+    <a-cylinder position="1.8 0.9 -4.3" radius="0.6" height="1.8" color="#264653"></a-cylinder>
+    <a-sphere position="3.7 1 -4.1" radius="1" color="#2A9D8F"></a-sphere>
+
+    <!-- Lantai dan langit dengan warna berbeda dari contoh -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#6B8F71"></a-plane>
+    <a-sky color="#B8C0FF"></a-sky>
+  </a-scene>
+</body>
+</html>
